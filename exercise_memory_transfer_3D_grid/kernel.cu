@@ -9,13 +9,16 @@
 #include <cuda.h>
 
 //kernel	
-__global__ void access_to_array(int * array ){
+__global__ void access_to_array(int * array, int size ){
 	int blockId = blockIdx.x + blockIdx.y * gridDim.x
 		+ gridDim.x * gridDim.y * blockIdx.z;
 	int threadId = blockId * (blockDim.x * blockDim.y * blockDim.z)
 		+ (threadIdx.z * (blockDim.x * blockDim.y))
 		+ (threadIdx.y * blockDim.x) + threadIdx.x;
-	printf("gid : %d\n", threadId);
+	
+	if (threadId < size) {
+		printf("gid :%d, value : %d\n", threadId, array[threadId]);
+	}
 
 }
 
@@ -42,14 +45,14 @@ int main(){
 	int* d_array;
 	cudaMalloc((void**)&d_array, byte_size);
 
-	//transfer
+	//transfer, its synchronous, so we wait for the copy to be completed before moving on
 	cudaMemcpy(d_array, h_array, byte_size, cudaMemcpyHostToDevice);
 
 	//launche 3d kernel
 	dim3 block(2, 2, 2);
 	dim3 grid(2,2,2);
 
-	access_to_array << <grid, block >> > (d_array);
+	access_to_array << <grid, block >> > (d_array, size);
 	cudaDeviceSynchronize();
 
 	free(h_array);
