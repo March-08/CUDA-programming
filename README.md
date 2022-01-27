@@ -34,3 +34,7 @@ My purpose is to deepen my knowledge about parallel programming!
 - [Sum Array](https://github.com/March-08/CUDA-programming/tree/main/sum_array)
   
   Let's transfer and sum 2 arrays in GPU. Monitor the time needed using clocks, and also lets handle the CUDA errors creating a macro and wrapping all the CUDA functions.
+
+- [Device Query](https://github.com/March-08/CUDA-programming/tree/main/device_query)
+  
+  Here is a simple script to query on the fly our device and get its properties/
