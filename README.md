@@ -37,4 +37,4 @@ My purpose is to deepen my knowledge about parallel programming!
 
 - [Device Query](https://github.com/March-08/CUDA-programming/tree/main/device_query)
   
-  Here is a simple script to query on the fly our device and get its properties/
+  Here is a simple script to query on the fly our device and get its properties
