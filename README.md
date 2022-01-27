@@ -39,8 +39,8 @@ My purpose is to deepen my knowledge about parallel programming!
   
   Here is a simple script to query on the fly our device and get its properties
   
-  - [Intro to Warps](https://github.com/March-08/CUDA-programming/blob/main/warp_id_thread_id/kernel.cu)
+ - [Intro to Warps](https://github.com/March-08/CUDA-programming/blob/main/warp_id_thread_id/kernel.cu)
   
-  We should consider the parallelism between software and hardware. Since each core of a SM can execute in parallel only a single warp (32 thread) this should be the otimal number oh threads in a block. If we 1 single thread in a block, the hardware will still assign a warp of 32 with resources for 32 threads, but 31 of htem will be inactive, and it will be a waste of resources.
+    We should consider the parallelism between software and hardware. Since each core of a SM can execute in parallel only a single warp (32 thread) this should be the otimal      number oh threads in a block. If we 1 single thread in a block, the hardware will still assign a warp of 32 with resources for 32 threads, but 31 of htem will be inactive,     and  it will be a waste of resources.
   
   
