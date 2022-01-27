@@ -16,21 +16,21 @@ My purpose is to deepen my knowledge about parallel programming!
  
 - [Hello Wolrd](https://github.com/March-08/CUDA-programming/blob/main/hello_world/kernel.cu)
  
- I learned key concepts such as **host** (cpu) and **device** (gpu) computation, the **context switch** method, and the apparent parallel execution of cpu. The difference between process and thread, how threads share memory. I know that there are 2 level of prallelism **(1) task level** and **(2) data level**. The difference between **parallelism** and **concurrency**. Finally I was able to launch the kernel using the **grid** and **block** parameters
+  I learned key concepts such as **host** (cpu) and **device** (gpu) computation, the **context switch** method, and the apparent parallel execution of cpu. The difference between process and thread, how threads share memory. I know that there are 2 level of prallelism **(1) task level** and **(2) data level**. The difference between **parallelism** and **concurrency**. Finally I was able to launch the kernel using the **grid** and **block** parameters
  
  - [Threads Organization](https://github.com/March-08/CUDA-programming/blob/main/thread_organization/kernel.cu)
   
-Often figuring out how and which threads access the kernel function is difficult. I have learned to use variables of type dim3 blockIdx, blockDim, gridDim to identify them. 
+   Often figuring out how and which threads access the kernel function is difficult. I have learned to use variables of type dim3 blockIdx, blockDim, gridDim to identify them. 
 
  - [Unique Index Calculation](https://github.com/March-08/CUDA-programming/blob/main/unique_index_calculation_using_threadIdx_blockIdx_blockDim/kernel.cu)
   
-Often identifying unique thread IDs can be difficult, especially when using grids and 2 or even 3 dimensional blocks. Here I solve this problem
+   Often identifying unique thread IDs can be difficult, especially when using grids and 2 or even 3 dimensional blocks. Here I solve this problem
 
 - [Memory Transfer](https://github.com/March-08/CUDA-programming/blob/main/memory_transfer/kernel.cu)
   
-In addition to processing data on the GPU, we also need to transfer data from the CPU to the GPU, and transfer the results back.
+  In addition to processing data on the GPU, we also need to transfer data from the CPU to the GPU, and transfer the results back.
 
 
 - [Sum Array](https://github.com/March-08/CUDA-programming/tree/main/sum_array)
   
-Let's transfer and sum 2 arrays in GPU. Monitor the time needed using clocks, and also lets handle the CUDA errors creating a macro and wrapping all the CUDA functions.
+  Let's transfer and sum 2 arrays in GPU. Monitor the time needed using clocks, and also lets handle the CUDA errors creating a macro and wrapping all the CUDA functions.
