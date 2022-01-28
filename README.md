@@ -43,4 +43,9 @@ My purpose is to deepen my knowledge about parallel programming!
   
     We should consider the parallelism between software and hardware. Since each core of a SM can execute in parallel only a single warp (32 thread) this should be the otimal      number oh threads in a block. If we 1 single thread in a block, the hardware will still assign a warp of 32 with resources for 32 threads, but 31 of htem will be inactive,     and  it will be a waste of resources.
   
+  - [Wrap Divergence](https://github.com/March-08/CUDA-programming/blob/main/wrap_divergence/kernel.cu)
+  
+    Wrap divergence is an issue for prallel computing. Part of the wrap, and so part of the NVIDIA SM can be disabled, and you can waste resources. Pay attention to if-else statments. You can check the branch_efficiencu metric using compiling with nvcc and running nvprof
+  
+  https://github.com/March-08/CUDA-programming/blob/main/wrap_divergence/kernel.cu
   
