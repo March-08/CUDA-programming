@@ -47,5 +47,4 @@ My purpose is to deepen my knowledge about parallel programming!
   
     Wrap divergence is an issue for prallel computing. Part of the wrap, and so part of the NVIDIA SM can be disabled, and you can waste resources. Pay attention to if-else statments. You can check the branch_efficiencu metric using compiling with nvcc and running nvprof
   
-  https://github.com/March-08/CUDA-programming/blob/main/wrap_divergence/kernel.cu
   
