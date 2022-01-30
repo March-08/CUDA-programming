@@ -14,7 +14,7 @@ My purpose is to deepen my knowledge about parallel programming!
   
 ## In this repository :
  
-- [Hello Wolrd](https://github.com/March-08/CUDA-programming/blob/main/hello_world/kernel.cu)
+- [Hello World](https://github.com/March-08/CUDA-programming/blob/main/hello_world/kernel.cu)
  
   I learned key concepts such as **host** (cpu) and **device** (gpu) computation, the **context switch** method, and the apparent parallel execution of cpu. The difference between process and thread, how threads share memory. I know that there are 2 level of prallelism **(1) task level** and **(2) data level**. The difference between **parallelism** and **concurrency**. Finally I was able to launch the kernel using the **grid** and **block** parameters
  
